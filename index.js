@@ -34,6 +34,6 @@ const transporter = nodemailer.createTransport({
     }
   });
 })
-app.listen(8080,()=>{
-    console.log(`port 8080 is running`)
+app.listen(process.env.PORT,()=>{
+    console.log(`port ${process.env.PORT} is running`)
 })
